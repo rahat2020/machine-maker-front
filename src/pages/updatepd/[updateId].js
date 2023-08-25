@@ -34,7 +34,7 @@ const featureupdate = ({ product }) => {
             }
             console.log(object)
             try {
-                const res = await axios.put(`http://localhost:5000/product/update/${product._id}`, object)
+                const res = await axios.put(`https://machine-maker.vercel.app/product/update/${product._id}`, object)
                 console.log('res', res)
                 toast("Product is updated")
                 setTimeout(() => {
@@ -65,7 +65,7 @@ const featureupdate = ({ product }) => {
     
             console.log(object)
             try {
-                const res = await axios.put(`http://localhost:5000/product/update/${product._id}`, object)
+                const res = await axios.put(`https://machine-maker.vercel.app/product/update/${product._id}`, object)
                 console.log('res', res)
                 toast("Product is updated")
                 setTimeout(() => {
@@ -187,7 +187,7 @@ export default featureupdate
 
 
 export const getStaticPaths = async () => {
-    const res = await fetch('http://localhost:5000/product/get');
+    const res = await fetch('https://machine-maker.vercel.app/product/get');
     const pd = await res.json();
 
     const paths = pd.map((item) => ({
@@ -199,7 +199,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const { params } = context;
-    const res = await fetch(`http://localhost:5000/product/get/${params?.updateId}`);
+    const res = await fetch(`https://machine-maker.vercel.app/product/get/${params?.updateId}`);
     const data = await res.json();
     console.log('single_data', data);
 

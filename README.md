@@ -1,10 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Welcome to my Machine Maker website. How you can install this code in your application:
 
 ## Getting Started
-
-First, run the development server:
-
+First, open the project in your code editor and then follow the instructions below:
 ```bash
+npm install
+# and then 
 npm run dev
 # or
 yarn dev
@@ -12,27 +13,36 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Machine Maker
+This is a pc builder website where you can build your pc. This project created with next js and tailwind css and also used next js authentications.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features of home page:
+- In the navbar user can see the dropdown of category and addproduct, all products and pc builders and also product cart with user profile.
+- In home page there is a list of features products.
+- In there, 6 categories of feature products.
+- A user can view category wise product by just clicking on the category.
+- A user can view single product details by clicking on the product on features product.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Features of single product page:
+- User can view product image and details of the product.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Features of PC Builder:
+- This is private route so if user is not logged in he will be redirected to the login page.
+- User can view category wise product and can select that category product.
+- Selected product will be added to product cart where I used redux to handle the task.
+- If user didn't add at least five product on the cart then he can't click on Complete Builder button it will be hide.
+- If user selected at least five product on the cart he will se the Complete Builder button and If click on that button will be shown a success toast message.
+- User can remove or minus a product product from the cart.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features of PC All Products:
+- User can view all products in the table.
+- If user isn't logged in, then he can not view the Edit and Delete product buttons.
+- If user is logged in and can view the Edit and Delete product buttons and clicking on the Edit button will redirect to the Edit product page.
+- If user is logged in and can Delete products.
 
-## Learn More
+## Features of PC Add Products:
+- This is private route so if user is not logged in he will be redirected to the login page.
+- If logged in the user can add products and category.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Server Code:
+- [Machine](https://github.com/rahat2020/machine-server) - servers

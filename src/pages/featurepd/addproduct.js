@@ -41,7 +41,7 @@ const addproduct = () => {
 
         console.log(object)
         try {
-            const res = await axios.post("http://localhost:5000/product/add", object)
+            const res = await axios.post("https://machine-maker.vercel.app/product/add", object)
             console.log('res', res)
             toast("Product is created")
             setTimeout(() => {
@@ -75,7 +75,7 @@ const addproduct = () => {
 
         console.log(object)
         try {
-            const res = await axios.post("http://localhost:5000/category/add", object)
+            const res = await axios.post("https://machine-maker.vercel.app/category/add", object)
             console.log('res', res)
             toast("Category is created")
             setTimeout(() => {

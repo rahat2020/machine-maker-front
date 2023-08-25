@@ -12,7 +12,7 @@ const allproducts = ({ data }) => {
     const handleDelete = async (_id) => {
 
         try {
-            const res = await axios.delete(`http://localhost:5000/product/delete/${_id}`)
+            const res = await axios.delete(`https://machine-maker.vercel.app/product/delete/${_id}`)
             res && toast("Product is deleted")
 
             setTimeout(() => {
@@ -105,7 +105,7 @@ const allproducts = ({ data }) => {
 export default allproducts
 
 export const getServerSideProps = async () => {
-    const res = await fetch('http://localhost:5000/product/get');
+    const res = await fetch('https://machine-maker.vercel.app/product/get');
     const data = await res.json();
 
     return {

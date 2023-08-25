@@ -45,7 +45,7 @@ const SingleProduct = ({ product }) => {
 export default SingleProduct;
 
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:5000/product/get');
+  const res = await fetch('https://machine-maker.vercel.app/product/get');
   const pd = await res.json();
 
   const paths = pd.map((item) => ({
@@ -57,7 +57,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
   const { params } = context;
-  const res = await fetch(`http://localhost:5000/product/get/${params?.pd}`);
+  const res = await fetch(`https://machine-maker.vercel.app/product/get/${params?.pd}`);
   const data = await res.json();
   console.log('single_data', data);
 

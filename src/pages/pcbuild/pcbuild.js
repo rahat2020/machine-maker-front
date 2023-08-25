@@ -42,7 +42,7 @@ const PcBuild = ({ data }) => {
 export default PcBuild
 
 export const getServerSideProps = async () => {
-  const res = await fetch('http://localhost:5000/category/get')
+  const res = await fetch('https://machine-maker.vercel.app/category/get')
   const data = await res.json()
   return {
     props: { data }
