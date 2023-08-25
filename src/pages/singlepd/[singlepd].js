@@ -19,10 +19,8 @@ export const getStaticPaths = async () => {
   const paths = pd.map((item) => ({
     params: { singlepd: item._id }
   }));
-  // const paths = pd.map((item) => {
-  //   params: { singlepd: item._id }
-  // })
-  return { paths, fallback: false }
+
+  return { paths, fallback: true };
 }
 
 export const getStaticProps = async (context) => {
