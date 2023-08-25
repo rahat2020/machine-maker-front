@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const featureupdate = ({ product }) => {
-    console.log('product', product)
+    // console.log('product', product)
 
     const [title, setTitle] = useState('')
     const [category, setCategory] = useState('')
@@ -201,7 +201,7 @@ export const getStaticProps = async (context) => {
     const { params } = context;
     const res = await fetch(`https://machine-maker.vercel.app/product/get/${params?.updateId}`);
     const data = await res.json();
-    console.log('single_data', data);
+    // console.log('single_data', data);
 
     return {
         props: {

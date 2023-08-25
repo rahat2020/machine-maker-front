@@ -115,7 +115,7 @@ export const getStaticProps = async (context) => {
     const { params } = context;
     const res = await fetch(`https://machine-maker.vercel.app/product/filtered?category=${params.pcid}`);
     const data = await res.json();
-    console.log('single_data', data);
+    // console.log('single_data', data);
 
     return {
         props: {

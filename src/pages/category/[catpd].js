@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import React from 'react'
 
 const categorypd = ({ product }) => {
-  console.log('product', product)
+  // console.log('product', product)
   const router = useRouter()
   // console.log('router', router.asPath)
   // console.log('router', router.asPath.slice(10, 26))
