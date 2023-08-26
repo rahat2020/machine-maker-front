@@ -7,7 +7,7 @@ import Modal from '../Modal/Modal';
 import CloseIcon from '@mui/icons-material/Close';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { minusOneFromCart, removeFromCart } from '@/redux/Cart/cartSlice';
+import { minusOneFromCart } from '@/redux/Cart/cartSlice';
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
     const dispatch = useDispatch()
     const handleRemove = (item) => {
         const _id = item._id;
-        console.log('form navbar cart id', _id);
+        // console.log('form navbar cart id', _id);
         dispatch(minusOneFromCart(_id))
         toast("Product removed from cart")
     }

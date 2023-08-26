@@ -1,5 +1,5 @@
-import FeatureProduct from '@/components/FeatureProduct/FeatureProduct'
-import HomeProduct from '@/components/HomeProduct/HomeProduct'
+// import FeatureProduct from '@/components/FeatureProduct/FeatureProduct'
+// import HomeProduct from '@/components/HomeProduct/HomeProduct'
 import React from 'react'
 import FeatureHomeProduct from './featurepd/featureProduct'
 import CategoryHome from './category/category'
