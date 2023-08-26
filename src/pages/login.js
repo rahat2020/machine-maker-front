@@ -16,7 +16,8 @@ const LoginPage = () => {
                         <h1 className='text-2xl text-center font-bold'>Login with Google</h1>
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
-                                <GoogleIcon className='w-20 h-20 cursor-pointer' onClick={() => signIn('google', { callbackUrl: 'https://machine-maker.netlify.app' })} />
+                                <GoogleIcon className='w-20 h-20 cursor-pointer' onClick={() => signIn('google', 
+                                { callbackUrl: 'https://machine-maker.netlify.app' })} />
                             </div>
                             {/* <p className='text-center'>Or</p>
                             <div className="form-control">
