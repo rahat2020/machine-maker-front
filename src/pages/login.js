@@ -17,7 +17,7 @@ const LoginPage = () => {
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
                                 <GoogleIcon className='w-20 h-20 cursor-pointer' onClick={() => signIn('google', 
-                                { callbackUrl: 'https://machine-maker.netlify.app' })} />
+                                { callbackUrl: 'https://machine-maker-front.vercel.app' })} />
                             </div>
                             {/* <p className='text-center'>Or</p>
                             <div className="form-control">
