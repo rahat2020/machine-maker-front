@@ -1,9 +1,13 @@
 import React from 'react';
 import { signIn } from "next-auth/react"
 import GoogleIcon from '@mui/icons-material/Google';
+// import { useRouter } from 'next/router';
 
 const LoginPage = () => {
-
+  // Access the URL of the previous route
+//   const router = useRouter();
+//   const previousRoute = router.asPath;
+//   console.log('previousRoute',previousRoute)
     return (
         <div className='bg-white'>
             <div className="hero min-h-screen ">
@@ -16,8 +20,9 @@ const LoginPage = () => {
                         <h1 className='text-2xl text-center font-bold'>Login with Google</h1>
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
-                                <GoogleIcon className='w-20 h-20 cursor-pointer' onClick={() => signIn('google', 
-                                { callbackUrl: 'https://machine-maker-front.vercel.app' })} />
+                                <GoogleIcon className='w-30 h-30 cursor-pointer' onClick={() => signIn('google', 
+                                { callbackUrl: 'http://localhost:3000' }
+                                )}/>
                             </div>
                             {/* <p className='text-center'>Or</p>
                             <div className="form-control">
