@@ -9,8 +9,7 @@ export const authOptions = {
         })
     ],
     pages:{
-        signIn:"https://main--machine-maker.netlify.app/login"
-        // signIn:"/login"
+        signIn:"/login"
     }
 }
 
