@@ -1,6 +1,5 @@
 import React from 'react';
 import { signIn } from "next-auth/react"
-import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const LoginPage = () => {
