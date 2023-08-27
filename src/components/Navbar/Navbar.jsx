@@ -29,7 +29,6 @@ const Navbar = () => {
     const dispatch = useDispatch()
     const handleRemove = (item) => {
         const _id = item._id;
-        // console.log('form navbar cart id', _id);
         dispatch(minusOneFromCart(_id))
         toast("Product removed from cart")
     }
@@ -82,13 +81,11 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li className='flex justify-center items-center ms-1'>
-                            {/* <Link href="/cart" className='py-1'> */}
+                          
                             <div className="indicator" >
                                 <span className="indicator-item badge badge-secondary">{newState?.length}</span>
                                 <button className="btn" ><ShoppingCartIcon onClick={openModal} /></button>
-                                {/* <button className="btn" ><ShoppingCartIcon onClick={() => window?.my_modal_1?.showModal()} /></button> */}
                             </div>
-                            {/* </Link> */}
                         </li>
 
                     </ul>
@@ -113,7 +110,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
 
             <Modal isOpen={isModalOpen} onClose={closeModal}>
                 <h2 className="text-xl mb-4 text-black font-bold uppercase text-center border-b-2">{session?.user.name} your cart product</h2>
