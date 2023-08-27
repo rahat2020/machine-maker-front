@@ -30,9 +30,7 @@ const PcBuildItem = ({ product }) => {
                         </div>
                     </form>
                 </dialog>
-
                 <ToastContainer />
-
                 <div className="mx-auto max-w-7xl px-5 lg:px-8">
                     <div className="flex flex-wrap gap-6">
 

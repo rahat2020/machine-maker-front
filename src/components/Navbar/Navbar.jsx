@@ -41,13 +41,10 @@ const Navbar = () => {
 
     return (
         <div>
-
             <div className="navbar bg-base-100">
                 <div className="flex-1">
                     <Link href="/" className="btn btn-ghost normal-case text-xl text-white">Machine Maker</Link>
                 </div>
-
-
                 <div className="flex-none gap-2">
                     <ul className="menu menu-horizontal px-1 text-white hover:text-white">
                         <li className='flex justify-center items-center ms-1'>
