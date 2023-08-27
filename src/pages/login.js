@@ -8,7 +8,7 @@ const LoginPage = () => {
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="card  w-full max-w-sm shadow-2xl p-3">
-                        <h1 className='text-2xl text-center font-bold'>Login with Google</h1>
+                        <h1 className='text-2xl text-center font-bold'>Login with Github</h1>
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
                                 <GitHubIcon className='w-32 h-32 cursor-pointer' onClick={() => signIn('github',
