@@ -16,8 +16,8 @@ const LoginPage = () => {
                         <h1 className='text-2xl text-center font-bold'>Login with Google</h1>
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
-                                <GoogleIcon className='w-30 h-30 cursor-pointer' onClick={() => signIn('google', 
-                                { callbackUrl: 'https://machine-maker-front.vercel.app/' }
+                                <GoogleIcon className='w-40 h-50 cursor-pointer' onClick={() => signIn('google', 
+                                { callbackUrl: 'https://machine-maker-front.vercel.app/pcbuild/pcbuild' }
                                 )}/>
                             </div>
                             {/* <p className='text-center'>Or</p>
