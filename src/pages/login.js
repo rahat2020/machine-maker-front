@@ -8,10 +8,6 @@ const LoginPage = () => {
         <div className='bg-white'>
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    {/* <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    </div> */}
                     <div className="card  w-full max-w-sm shadow-2xl p-3">
                         <h1 className='text-2xl text-center font-bold'>Login with Google</h1>
                         <div className="card-body">

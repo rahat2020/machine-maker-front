@@ -165,8 +165,6 @@ const Navbar = () => {
                     </button>
                 </div>
             </Modal>
-
-
             <ToastContainer />
         </div>
     )
