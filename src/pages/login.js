@@ -3,7 +3,6 @@ import { signIn } from "next-auth/react"
 import GoogleIcon from '@mui/icons-material/Google';
 
 const LoginPage = () => {
- 
     return (
         <div className='bg-white'>
             <div className="hero min-h-screen ">
@@ -13,7 +12,7 @@ const LoginPage = () => {
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
                                 <GoogleIcon className='w-40 h-50 cursor-pointer' onClick={() => signIn('google', 
-                                { callbackUrl: 'https://machine-maker-front.vercel.app/pcbuild/pcbuild' }
+                                { callbackUrl: '/pcbuild/pcbuild' }
                                 )}/>
                             </div>
                             {/* <p className='text-center'>Or</p>
