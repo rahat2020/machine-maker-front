@@ -12,7 +12,8 @@ const LoginPage = () => {
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
                                 <GitHubIcon className='w-32 h-32 cursor-pointer' onClick={() => signIn('github',
-                                    { callbackUrl: 'https://machine-maker-front.vercel.app/pcbuild/pcbuild' }
+                                    { callbackUrl: 'http://localhost:3000/pcbuild/pcbuild' }
+                                    // { callbackUrl: 'https://machine-maker-front.vercel.app/pcbuild/pcbuild' }
                                 )} />
                             </div>
                             {/* <p className='text-center'>Or</p>
