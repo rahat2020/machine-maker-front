@@ -1,6 +1,7 @@
 import React from 'react';
 import { signIn } from "next-auth/react"
 import GoogleIcon from '@mui/icons-material/Google';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const LoginPage = () => {
     return (
@@ -11,9 +12,9 @@ const LoginPage = () => {
                         <h1 className='text-2xl text-center font-bold'>Login with Google</h1>
                         <div className="card-body">
                             <div className="flex items-center justify-center text-center">
-                                <GoogleIcon className='w-40 h-50 cursor-pointer' onClick={() => signIn('google', 
-                                { callbackUrl: 'https://machine-maker-front.vercel.app/pcbuild/pcbuild' }
-                                )}/>
+                                <GitHubIcon className='w-32 h-32 cursor-pointer' onClick={() => signIn('github',
+                                    { callbackUrl: 'http://localhost:3000/pcbuild/pcbuild' }
+                                )} />
                             </div>
                             {/* <p className='text-center'>Or</p>
                             <div className="form-control">
